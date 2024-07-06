@@ -175,7 +175,7 @@ nav > div > a > *{
 .card > h1{
     font-size: 1.2rem;
 }
-main{
+.main{
     display:grid;
     grid-template-columns: repeat(auto-fill, 375px);
     margin-top: 20px;
@@ -248,7 +248,7 @@ aside > h1{
     
 }
 @media screen and (max-width: 640px){
-    main{
+    .main{
         grid-column: 2;
     }
     aside{display: none}
