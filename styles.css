@@ -183,7 +183,7 @@ nav > div > a > *{
     grid-row: 2 / span auto;
     grid-column: 2 / span auto;
     row-gap: 30px;
-    column-gap: 50px;
+    column-gap: 30px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
@@ -192,7 +192,7 @@ aside{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    
+    margin-left: 10px;
 }
 .new{
     padding: 10px;
@@ -200,6 +200,9 @@ aside{
     border-radius: 10px;
     margin-right: 10px;
 
+}
+main > h1{
+    margin-left: 10px;
 }
 .first{
     border-bottom: 1px solid rgb(123, 120, 120);
@@ -236,12 +239,15 @@ aside > h1{
     border: none
 }
 @media screen and (max-width: 1000px) {
-
+    body{
+        display: block;
+    }
     nav{
         display: none;
     }
     header{
-        grid-column: 1 / span 3;
+        
+        
         height: 50px;
     }
 
@@ -249,10 +255,11 @@ aside > h1{
     
 }
 @media screen and (max-width: 640px){
+    
     .main{
         grid-column: 2;
+        
     }
-    aside{display: none}
     .card{
         width: 300px;
     }
@@ -284,5 +291,8 @@ aside > h1{
     }
     .card{
         width: 300px;
+    }
+    header{
+        min-width: 100vw;
     }
 }
